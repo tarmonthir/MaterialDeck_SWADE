@@ -1,6 +1,6 @@
 # Token Action
 
-The token action has extra features for the `Token` mode, and adds new modes:
+The SWADE module adds extra features to the base `Token` action, and adds the following new modes:
 
 * [Token Mode](#token-mode): New `Stats`, `On Press` and `On Hold` options
 * [Inventory Mode](#inventory-mode): Display and roll weapons and other items
@@ -13,7 +13,7 @@ The [Token mode](https://materialfoundry.github.io/MaterialDeck/actions/token/to
 | Option            | Description   |
 |-------------------|---------------|
 | Stats             | Stat to display:<br><b>-Wounds</b><br><b>-Fatigue</b><br><b>-Power Points</b>: Can be set to any power point source.<br><b>-Bennies</b><br><b>-Parry</b><br><b>-Toughness</b><br><b>-Advances</b><br><b>-Currency</b><br><b>-Encumbrance</b><br><b>-Attribute</b>: Die of a specified attribute.<br><b>-Pace</b>: Can show one or more movement types at once.<br><b>-Skill</b>: Can select a default skill or input a custom skill name.<br><b>-Status</b>: Highlights the status when it is active.|
-| On Press/On Hold  | Sets what to do when the button is pressed/held down:<br><b>-Manage Wounds</b>: Increase, decrease, or remove all wounds.<br><b>-Manage Fatigue</b>: Increase, decrease, or remove all fatigue.<br><b>-Manage Power Points</b>: Increase, decrease, or reset power points to maximum.<br><b>-Toggle Condition</b>: Toggle a specified status or clear all statuses.<br><b>-[Dice Roll](#dice-roll)</b>: Roll an attribute, skill, or running die.<br><b>-Manage Bennies</b>: Add or spend a benny. |
+| On Press/On Hold  | Sets what to do when the button is pressed/held down:<br><b>-Manage Wounds</b>: Increase, decrease, or remove all wounds.<br><b>-Manage Fatigue</b>: Increase, decrease, or remove all fatigue.<br><b>-Manage Power Points</b>: Increase, decrease, or reset power points to maximum.<br><b>-Toggle Status</b>: Toggle a specified status or clear all statuses.<br><b>-[Dice Roll](#dice-roll)</b>: Roll an attribute, skill, or running die.<br><b>-Manage Bennies</b>: Add or spend a benny. |
 
 ### Dice Roll
 `Dice Roll` allows you to roll for the selected token/actor.
@@ -55,7 +55,7 @@ The features mode can be used to display and control token/actor features.
 | Option            | Description   |
 |-------------------|---------------|
 | Features Type         | <b>-Any</b>: Select any kind of feature.<br><b>-Ability</b>: Select from abilities.<br><b>-Action</b>: Select from actions.<br><b>-Ancestry</b>: Select from ancestries.<br><b>-Edge</b>: Select from edges.<br><b>-Hindrance</b>: Select from hindrances.<br><b>-Power</b>: Select from powers.<br><b>-Skill</b>: Select from skills.<br><b>-[Set Type & Filter Sync](#synced-settings)</b>: Set the synced settings for this page. Will synchronize `Feature Type` and `Feature Type Filter`.<br><b>-[Offset](#offset)</b>: Set feature offsets. |
-| Selection Filter  | Selects feature types to filter out:<br><b>-Power</b>: Filters powers.<br><b>-Skill</b>: Filters skills (useful if you are using skills via [Token Mode](#token-mode) instead).|
+| Feature Type Filter  | Selects feature types to filter out:<br><b>-Power</b>: Filters powers.<br><b>-Skill</b>: Filters skills (useful if you are using skills via [Token Mode](#token-mode) instead).|
 | Sync Type & Filter | Will [synchronize](#synced-settings) `Feature Type` and `Feature Type Filter` for all buttons on this page with this setting enabled. |
 | Selection         | Set how to select the feature:<br><b>-Select by Nr</b>: Select a feature using a number.<br><b>-Select by Name/Id</b>: Select a feature using its name or id. |
 | Order<br>(`Select by Nr`) | Sets how to order the features:<br><b>-Character Sheet</b>: Follow the order of the character sheet.<br><b>-Alphabetically</b>: Order features alphabetically.    |
@@ -69,7 +69,7 @@ The effects mode can be used to display and toggle token/actor effects.
 
 | Option            | Description   |
 |-------------------|---------------|
-| Effect Type         | <b>-Any</b>: Select any kind of effect.<br><b>-Base</b>: Select "Base" type effects (most effects will be this type).<br><b>Active Effect</b>: Select "Active Effect" type effects.<br><b>Modifier</b>: Select "Modifier" type effects.<br><b>-[Set Type & Filter Sync](#synced-settings)</b>: Set the synced settings for this page. Will synchronize `Effect Type` and `Effect Type Filter`.<br><b>-[Offset](#offset)</b>: Set effect offsets. |
+| Effect Type         | <b>-Any</b>: Select any kind of effect.<br><b>-Base</b>: Select "Base" type effects (most effects will be this type).<br><b>-Active Effect</b>: Select "Active Effect" type effects.<br><b>-Modifier</b>: Select "Modifier" type effects.<br><b>-[Set Type & Filter Sync](#synced-settings)</b>: Set the synced settings for this page. Will synchronize `Effect Type` and `Effect Type Filter`.<br><b>-[Offset](#offset)</b>: Set effect offsets. |
 | Effect Type Filter  | Selects effect types to filter out:<br><b>-Temporary Effects</b>: Filters temporary effects.<br><b>-Permanent Effects</b>: Filters permanent effects.<br><b>-Status</b>: Filters status effects (useful if managing statuses via [Token Mode](#token-mode) instead).|
 | Sync Type & Filter | Will [synchronize](#synced-settings) `Effect Type` and `Effect Type Filter` for all buttons on this page with this setting enabled. |
 | Selection         | Set how to select the effect:<br><b>-Select by Nr</b>: Select an effect using a number.<br><b>-Select by Name/Id</b>: Select an effect using its name or id. |
