@@ -4,7 +4,7 @@ import { combatTrackerAction } from "./actions/combatTracker.js";
 import { Helpers } from "./helpers.js";
 
 const moduleId = 'materialdeck-swade';
-export const documentation = "https://materialfoundry.github.io/MaterialDeck_SWADE/";
+export const documentation = "https://tarmonthir.github.io/MaterialDeck_SWADE/";
 
 Hooks.once('MaterialDeck_Ready', () => {
     Helpers.rollType = new game.materialDeck.Helpers.ModeSwitcher('default', 'mdUpdateRollType');
