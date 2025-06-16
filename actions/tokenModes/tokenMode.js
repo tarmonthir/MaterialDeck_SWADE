@@ -563,6 +563,7 @@ export function getTokenStats(sync) {
     return [
         {
             id: "tokenMode.stats.mode",
+			link: getDocs('#token-mode'),
             appendOptions: [
 				{ value: 'Advances', label: localize('Adv', 'SWADE') },
 				{ value: 'Attribute', label: localize('Attribute', 'SWADE') },
