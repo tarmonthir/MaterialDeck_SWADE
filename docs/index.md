@@ -12,8 +12,8 @@ The Material Deck SWADE system module adds SWADE-dependent features to Material 
 
 ## Combatibility
 
-<b>Foundry VTT</b>: v13<br>
-<b>Savage Worlds Adventure Edition</b>: v5
+<b>Foundry VTT</b>: v12-13<br>
+<b>Savage Worlds Adventure Edition</b>: v4-5
 
 ## Example Stream Deck Profile
 
